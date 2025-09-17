@@ -2,91 +2,113 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bibi’ké Taíno | Sustainable Community &amp; DAO</title>
-    <!-- Using Simple.css for a clean, minimalist design -->
+    <!-- Bootstrap 5 CSS from CDN for a modern look -->
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://cdn.simplecss.org/simple.min.css"
+      integrity="sha384-3wPz9vPiEhDRbugzuDUFcPRl1BDpRP70dNDO7xjMnIKh4j/wZUp3NEiqPFcJZ6az"
+      crossorigin="anonymous"
     />
     <style>
-      /* Custom tweaks to improve layout */
-      nav a {
-        margin-right: 1rem;
+      /* Custom styles to complement Bootstrap */
+      body {
+        font-family: Arial, sans-serif;
       }
       header {
-        text-align: center;
+        background: linear-gradient(135deg, #0d6efd, #0a58ca);
       }
-      section {
-        padding-top: 2rem;
+      nav {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+      nav a.nav-link {
+        color: #343a40;
+        font-weight: 500;
+      }
+      nav a.nav-link:hover {
+        color: #0d6efd;
+      }
+      section h2 {
+        margin-bottom: 1rem;
+        font-weight: 700;
       }
       footer {
-        margin-top: 2rem;
-        text-align: center;
-        font-size: 0.9rem;
+        background-color: #f8f9fa;
+      }
+      footer p {
+        margin-bottom: 0;
       }
     </style>
   </head>
   <body>
-    <header>
-      <h1>Bibi’ké Taíno</h1>
-      <p>Ancient wisdom meets a decentralized, sustainable future</p>
-      <!-- Simple navigation for quick access to each section -->
-      <nav>
-        <a href="#about">About</a>
-        <a href="#token">Token &amp; DAO</a>
-        <a href="#nft-deeds">NFT Deeds</a>
-        <a href="#permits">Permits &amp; Compliance</a>
-        <a href="#investors">Investors</a>
-        <a href="#buyers">Buyers</a>
-        <a href="#roadmap">Roadmap</a>
-        <a href="#contact">Contact</a>
-      </nav>
+    <!-- Hero Header -->
+    <header class="text-white text-center py-5">
+      <h1 class="display-4 fw-bold">Bibi’ké Taíno</h1>
+      <p class="lead">
+        Ancient wisdom meets a decentralized, sustainable future
+      </p>
     </header>
 
-    <main>
-      <!-- About & Vision -->
-      <section id="about">
+    <!-- Navigation Bar -->
+    <nav class="nav justify-content-center bg-light shadow-sm py-3">
+      <a class="nav-link" href="#about">About</a>
+      <a class="nav-link" href="#token">Token &amp; DAO</a>
+      <a class="nav-link" href="#nft-deeds">NFT Deeds</a>
+      <a class="nav-link" href="#permits">Permits &amp; Compliance</a>
+      <a class="nav-link" href="#investors">Investors</a>
+      <a class="nav-link" href="#buyers">Buyers</a>
+      <a class="nav-link" href="#roadmap">Roadmap</a>
+      <a class="nav-link" href="#contact">Contact</a>
+    </nav>
+
+    <main class=""> <!-- Wrap sections in main for semantics -->
+      <!-- About & Vision Section -->
+      <section id="about" class="container py-5">
         <h2>About &amp; Vision</h2>
         <p>
-          Bibi’ké Taíno is more than a neighbourhood &ndash; it’s a movement. Inspired
-          by the Taíno people and the energy of Atabey (Mother Earth), our
-          mission is to build regenerative communities that honour ancestral
-          wisdom while embracing modern, decentralised technologies.
+          Bibi’ké Taíno is more than a neighbourhood &ndash; it’s a movement.
+          Inspired by the Taíno people and the energy of Atabey (Mother Earth),
+          our mission is to build regenerative communities that honour
+          ancestral wisdom while embracing modern, decentralised
+          technologies.
         </p>
         <p>
-          We design self‑sufficient eco‑villages where homes harvest their own
-          water and energy, food is grown locally, and decision making occurs
-          transparently through a Decentralised Autonomous Organisation (DAO).
-          Every resident is a steward of the land and has a voice in how the
-          community evolves.
+          We design self‑sufficient eco‑villages where homes harvest their
+          own water and energy, food is grown locally, and decision making
+          occurs transparently through a Decentralised Autonomous
+          Organisation (DAO). Every resident is a steward of the land and
+          has a voice in how the community evolves.
         </p>
       </section>
 
-      <!-- Token & DAO -->
-      <section id="token">
+      <!-- Token & DAO Section -->
+      <section id="token" class="container py-5 bg-light">
         <h2>Bibi’ké Token &amp; DAO</h2>
         <p>
-          The <strong>Bibi’ké Token</strong> is the lifeblood of our economy and
-          governance. It acts as a medium of exchange within the community and
-          grants holders the right to vote on proposals through the
-          <strong>Bibi’ké DAO</strong>.
+          The <strong>Bibi’ké Token</strong> is the lifeblood of our economy
+          and governance. It acts as a medium of exchange within the
+          community and grants holders the right to vote on proposals
+          through the <strong>Bibi’ké DAO</strong>.
         </p>
-        <ul>
-          <li>
-            <strong>Fixed supply:</strong> To protect long‑term value, the token
-            supply is capped. A portion is allocated to the community treasury
-            for infrastructure and cultural programs.
+        <ul class="list-unstyled ms-3">
+          <li class="mb-2">
+            <strong>Fixed supply:</strong> To protect long‑term value, the
+            token supply is capped. A portion is allocated to the community
+            treasury for infrastructure and cultural programs.
           </li>
-          <li>
+          <li class="mb-2">
             <strong>Utility:</strong> Purchase property deeds, participate in
             governance, and earn rewards for contributions to energy
             production, food growing, and community service.
           </li>
-          <li>
-            <strong>Governance:</strong> Every adult resident holding tokens can
-            vote on proposals. Proposals covering budgets, infrastructure
-            upgrades, and cultural events require a supermajority to pass.
+          <li class="mb-2">
+            <strong>Governance:</strong> Every adult resident holding tokens
+            can vote on proposals. Proposals covering budgets,
+            infrastructure upgrades, and cultural events require a
+            supermajority to pass.
           </li>
         </ul>
         <p>
@@ -95,30 +117,32 @@
         </p>
       </section>
 
-      <!-- NFT Property Deeds -->
-      <section id="nft-deeds">
+      <!-- NFT Property Deeds Section -->
+      <section id="nft-deeds" class="container py-5">
         <h2>NFT Property Deeds</h2>
         <p>
           Ownership of land in a Bibi’ké Taíno community is represented by a
-          unique non‑fungible token (NFT) deed. Minting a deed grants you the
-          right to occupy and steward a specific plot within our neighbourhood.
+          unique non‑fungible token (NFT) deed. Minting a deed grants you
+          the right to occupy and steward a specific plot within our
+          neighbourhood.
         </p>
-        <ul>
-          <li>
-            <strong>Digital &amp; legal:</strong> Each NFT deed corresponds to a
-            legally compliant land contract, stored on‑chain and backed by
-            traditional legal agreements. This ensures your ownership is
-            recognised both digitally and in the real world.
+        <ul class="list-unstyled ms-3">
+          <li class="mb-2">
+            <strong>Digital &amp; legal:</strong> Each NFT deed corresponds
+            to a legally compliant land contract, stored on‑chain and
+            backed by traditional legal agreements. This ensures your
+            ownership is recognised both digitally and in the real world.
           </li>
-          <li>
-            <strong>Resale &amp; transfer:</strong> You may transfer your deed to
-            another party according to community guidelines and applicable
-            regulations.
+          <li class="mb-2">
+            <strong>Resale &amp; transfer:</strong> You may transfer your
+            deed to another party according to community guidelines and
+            applicable regulations.
           </li>
-          <li>
-            <strong>Minting process:</strong> To acquire a deed, connect your
-            wallet, obtain Bibi’ké Tokens, and mint during the public sale.
-            Quantities are limited to ensure balanced community growth.
+          <li class="mb-2">
+            <strong>Minting process:</strong> To acquire a deed, connect
+            your wallet, obtain Bibi’ké Tokens, and mint during the public
+            sale. Quantities are limited to ensure balanced community
+            growth.
           </li>
         </ul>
         <p>
@@ -127,31 +151,31 @@
         </p>
       </section>
 
-      <!-- Government Permits & Compliance -->
-      <section id="permits">
+      <!-- Government Permits & Compliance Section -->
+      <section id="permits" class="container py-5 bg-light">
         <h2>Government Permits &amp; Compliance</h2>
         <p>
           Bibi’ké Taíno operates within the legal framework of each
           jurisdiction where we build. Our team works closely with
           authorities to secure all necessary permits and approvals. These
           include zoning and land use approvals, environmental impact
-          assessments, building permits, and infrastructure permits for water
-          and power systems. Our approach emphasises transparency and
+          assessments, building permits, and infrastructure permits for
+          water and power systems. Our approach emphasises transparency and
           collaboration to ensure compliance and longevity.
         </p>
-        <ul>
-          <li>
-            <strong>Environmental compliance:</strong> We conduct full impact
-            studies, adhering to environmental protection laws and integrating
-            renewable technologies that reduce our footprint.
+        <ul class="list-unstyled ms-3">
+          <li class="mb-2">
+            <strong>Environmental compliance:</strong> We conduct full
+            impact studies, adhering to environmental protection laws and
+            integrating renewable technologies that reduce our footprint.
           </li>
-          <li>
+          <li class="mb-2">
             <strong>Land use &amp; zoning:</strong> Each community site is
             approved for residential and agricultural use. Agreements with
             municipal or county authorities confirm that our off‑grid
             infrastructures meet or exceed building codes.
           </li>
-          <li>
+          <li class="mb-2">
             <strong>Legal recognition of NFTs:</strong> Our legal team
             collaborates with regulators to ensure NFT deeds are recognised
             alongside traditional land titles, providing you with a secure
@@ -159,41 +183,42 @@
           </li>
         </ul>
         <p>
-          We share updates about permits and compliance openly. Investors and
-          buyers can review documentation in our due diligence portal (coming
-          soon). If you have questions about regulatory status, contact us.
+          We share updates about permits and compliance openly. Investors
+          and buyers can review documentation in our due diligence portal
+          (coming soon). If you have questions about regulatory status,
+          contact us.
         </p>
       </section>
 
-      <!-- Investor Information -->
-      <section id="investors">
+      <!-- Investor Information Section -->
+      <section id="investors" class="container py-5">
         <h2>Investor Information</h2>
         <p>
-          Investors play a crucial role in bringing Bibi’ké Taíno communities
-          to life. By supporting our project, you help finance land
-          acquisition, infrastructure development, and the growth of our
-          regenerative economy. In return, investors receive Bibi’ké Tokens,
-          priority access to property deeds, and participation in our
-          governance.
+          Investors play a crucial role in bringing Bibi’ké Taíno
+          communities to life. By supporting our project, you help finance
+          land acquisition, infrastructure development, and the growth of
+          our regenerative economy. In return, investors receive Bibi’ké
+          Tokens, priority access to property deeds, and participation in
+          our governance.
         </p>
-        <ul>
-          <li>
+        <ul class="list-unstyled ms-3">
+          <li class="mb-2">
             <strong>Use of proceeds:</strong> Funds raised are earmarked for
             land purchases, construction of eco‑homes, renewable energy
             systems, community facilities, and community agriculture.
           </li>
-          <li>
+          <li class="mb-2">
             <strong>Value proposition:</strong> Token holders benefit from
             potential appreciation of the community and token value as more
             residents join and demand for deeds grows. Because supply is
-            limited and the project focuses on sustainable living, there is
-            strong potential for long‑term value creation.
+            limited and the project focuses on sustainable living, there
+            is strong potential for long‑term value creation.
           </li>
-          <li>
-            <strong>Investor relations:</strong> We provide regular reports on
-            financial health, development progress, and governance decisions.
-            Transparent accounting ensures you always know how resources are
-            being used.
+          <li class="mb-2">
+            <strong>Investor relations:</strong> We provide regular reports
+            on financial health, development progress, and governance
+            decisions. Transparent accounting ensures you always know how
+            resources are being used.
           </li>
         </ul>
         <p>
@@ -203,32 +228,33 @@
         </p>
       </section>
 
-      <!-- Buyer Information -->
-      <section id="buyers">
+      <!-- Buyer Information Section -->
+      <section id="buyers" class="container py-5 bg-light">
         <h2>Buyer Information</h2>
         <p>
           Buying into Bibi’ké Taíno means joining a community committed to
-          sustainability and mutual support. Whether you’re securing a home
-          for your family or seeking a place that aligns with your values,
-          our NFT deed system makes ownership simple and secure.
+          sustainability and mutual support. Whether you’re securing a
+          home for your family or seeking a place that aligns with your
+          values, our NFT deed system makes ownership simple and secure.
         </p>
-        <ul>
-          <li>
+        <ul class="list-unstyled ms-3">
+          <li class="mb-2">
             <strong>Getting started:</strong> Acquire Bibi’ké Tokens through
-            our token sale or secondary market. Then connect your wallet to
-            our minting portal to purchase an NFT deed during the sale.
+            our token sale or secondary market. Then connect your wallet
+            to our minting portal to purchase an NFT deed during the sale.
           </li>
-          <li>
+          <li class="mb-2">
             <strong>What you receive:</strong> Minting a deed grants you
             perpetual rights to use and steward a specific plot within the
             community. You’ll also gain voting power in the DAO to shape
             the neighbourhood’s future.
           </li>
-          <li>
+          <li class="mb-2">
             <strong>Living in Bibi’ké Taíno:</strong> Residents commit to
-            communal guidelines that promote harmony with the environment and
-            each other. Participation in shared maintenance and community
-            initiatives is encouraged to keep our ecosystems thriving.
+            communal guidelines that promote harmony with the environment
+            and each other. Participation in shared maintenance and
+            community initiatives is encouraged to keep our ecosystems
+            thriving.
           </li>
         </ul>
         <p>
@@ -238,39 +264,39 @@
         </p>
       </section>
 
-      <!-- Roadmap -->
-      <section id="roadmap">
+      <!-- Roadmap Section -->
+      <section id="roadmap" class="container py-5">
         <h2>Roadmap</h2>
-        <ol>
-          <li>
+        <ol class="ps-3">
+          <li class="mb-2">
             <strong>Phase 1 – Token &amp; DAO Launch:</strong> Finalise token
             economics and launch the Bibi’ké Token. Introduce the DAO
             platform and engage early supporters.
           </li>
-          <li>
+          <li class="mb-2">
             <strong>Phase 2 – Land Acquisition &amp; Planning:</strong> Secure
             land parcels, complete environmental and zoning approvals, and
             develop the master plan for the first community.
           </li>
-          <li>
+          <li class="mb-2">
             <strong>Phase 3 – Construction:</strong> Build initial
             eco‑homes, community hubs, energy and water systems, and
             demonstration gardens.
           </li>
-          <li>
+          <li class="mb-2">
             <strong>Phase 4 – NFT Deed Sale:</strong> Launch the public sale
             of NFT deeds, onboard residents, and expand the neighbourhood.
           </li>
-          <li>
-            <strong>Phase 5 – Expansion:</strong> Replicate the model in new
-            locations, forming a network of Bibi’ké Taíno communities
+          <li class="mb-2">
+            <strong>Phase 5 – Expansion:</strong> Replicate the model in
+            new locations, forming a network of Bibi’ké Taíno communities
             worldwide.
           </li>
         </ol>
       </section>
 
-      <!-- Contact & Get Involved -->
-      <section id="contact">
+      <!-- Contact & Get Involved Section -->
+      <section id="contact" class="container py-5 bg-light">
         <h2>Contact &amp; Get Involved</h2>
         <p>
           Ready to join the movement? Whether you’re an investor, future
@@ -280,30 +306,59 @@
         <form
           action="https://formspree.io/f/xexample"
           method="POST"
-          style="max-width: 500px; margin: 0 auto"
+          class="row g-3"
+          style="max-width: 600px;"
         >
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
-
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-
-          <button type="submit">Submit</button>
+          <div class="col-md-6">
+            <label for="name" class="form-label">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="form-control"
+              required
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-control"
+              required
+            />
+          </div>
+          <div class="col-12">
+            <label for="message" class="form-label">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              class="form-control"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
         </form>
       </section>
     </main>
 
-    <footer>
+    <footer class="text-center py-4">
       <p>&copy; 2025 Bibi’ké Taíno. All rights reserved.</p>
-      <p>
-        <small
-          >This website is for informational purposes only and does not
-          constitute investment or legal advice.</small
-        >
+      <p class="small">
+        This website is for informational purposes only and does not
+        constitute investment or legal advice.
       </p>
     </footer>
+
+    <!-- Bootstrap 5 JS (optional) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-XsEnhxYZyFcJCXeRcTTx7mVJ6BdDVdy+AnT4wHHRFB11DuGdf1G9zHWXjbTG3Sa8"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
